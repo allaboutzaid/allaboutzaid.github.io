@@ -943,6 +943,9 @@ h3.my-profession {
     .home .home-img {
         display: none;
     }
+    .wrapper{
+        display: none;
+    }
 }
 @media (max-width:767px)
 {
@@ -956,5 +959,8 @@ h3.my-profession {
     .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .wrapper{
+        display: none;
     }
 }
