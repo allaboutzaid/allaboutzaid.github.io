@@ -963,4 +963,77 @@ h3.my-profession {
     .wrapper{
         display: none;
     }
+.btn {
+    position: relative;
+    background: var(--bg-black-50);
+    color: var(--skin-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn:hover {
+    letter-spacing: 0.25em;
+    background: var(--skin-color);
+    color: var(--skin-color);
+    box-shadow: 0 0 35px var(--skin-color);
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: var(--btn-black-900);
+}
+
+.btn i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.btn i::before {
+    content: '';
+    position: absolute;
+    top: -1.5px;
+    left: 80%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid var(--skin-color);
+    background: var(--btn-black-900);
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.btn:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+.btn i::after {
+    content: '';
+    position: absolute;
+    bottom: -1.5px;
+    left: 20%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid var(--skin-color);
+    background: var(--btn-black-900);
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.btn:hover i::after {
+    width: 20px;
+    left: 80%;
+}
 }
