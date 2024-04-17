@@ -893,6 +893,21 @@ h3.my-profession {
     border: 1px solid #000;
     border-radius: 100%;
     filter: invert();
+    animation: myAnime 5s linear infinite;
+}
+
+@keyframes myAnime {
+    0% {
+        scale: 0.5;
+    }
+
+    50% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 0.5;
+    }
 }
 
 /* contact me section  */
