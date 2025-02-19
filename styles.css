@@ -823,3 +823,9 @@ h3.service-title {
     padding: 1.5rem;
     display: block;
 }
+
+@media screen and (max-width: 768px) {
+    .masonry img {
+        padding: 0.5rem;
+    }
+}
